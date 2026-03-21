@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { useEffect } from 'react';
 import './App.css'
+import About from './components/About';
+import Contact from './components/Contact';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import Services from './components/Services';
+import Stats from './components/Stats';
+import Testimonials from './components/Testimonials';
+import Lenis from 'lenis';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+ },[]);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main className='flex flex-col container mx-auto p-10 max-w-4xl lg:pr-10 lg:pl-0 lg:max-w-6xl'>
+        <Hero />
+        <Stats />
+        <Projects />
+        <About />
+        <Services />
+        <Resume />
+        <Testimonials />
+        <Contact />
+      </main>
     </>
-  )
+  );
 }
 
 export default App
