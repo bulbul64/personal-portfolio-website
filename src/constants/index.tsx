@@ -29,10 +29,10 @@ import {
   Layers,
   Mail,
   MessageCircle,
-  Palette,
-  Rocket,
+
+ 
   Settings,
-  Smartphone,
+
   Twitter,
   User,
   Youtube,
