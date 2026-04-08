@@ -3,7 +3,7 @@
 This is my **personal portfolio website** built with **React**, **TypeScript**, and **Vite**.  
 It showcases my projects, skills, and contact info in a modern, responsive layout.
 
-🔗 Live Site: https://personal-portfolio-website-ten-liard.vercel.app/
+🔗 Live Site: [Portfolio Website](https://personal-portfolio-website-ten-liard.vercel.app/)
 
 ---
 
@@ -40,8 +40,20 @@ It showcases my projects, skills, and contact info in a modern, responsive layou
 ---
 
 ## 🚀 How to Run Locally
-To run this project on your local machine:
+To run this project on your local machine, follow these steps:
 
-### 1. Clone the Repository
 ```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/bulbul64/personal-portfolio-website.git
+
+# 2️⃣ Navigate to project folder
+cd personal-portfolio-website
+
+# 3️⃣ Install all dependencies
+npm install
+
+# 4️⃣ Start the development server
+npm run dev
+
+# 5️⃣ Open in browser
+# Visit: http://localhost:5173
